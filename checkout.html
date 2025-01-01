@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css"> 
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Order Summary</h1>
+        <ul id="order-items">
+            <!-- Order items -->
+        </ul>
+        <p id="total-price">Total: LKR 0.00</p>
+        <div class="thank-you">
+            <p>Thank you for ordering our foods!</p>
+            <p>The Gallery Cafe</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var basketItems = JSON.parse(localStorage.getItem('basketItems')) || [];
+            var totalPrice = basketItems.reduce((total, item) => total + item.price, 0);
+
+            // Display the basket items
+            var orderItemsList = document.getElementById('order-items');
+            basketItems.forEach(item => {
+                var listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - LKR ${item.price.toFixed(2)}`;
+                orderItemsList.appendChild(listItem);
+            });
+
+            //  total price
+            var totalPriceElement = document.getElementById('total-price');
+            totalPriceElement.textContent = "Total: LKR " + totalPrice.toFixed(2);
+
+            
+            // localStorage.removeItem('basketItems');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* checkout.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-image: url(img/IMG-20240730-WA0013.jpg);
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(21, 92, 92);
+}
+
+h1 {
+    text-align: center;
+    color: #fffbfb;
+}
+
+#order-items {
+    list-style-type: none;
+    padding: 0;
+    color: #fffcfc;
+}
+
+#order-items li {
+    padding: 10px 0;
+    border-bottom: 1px solid #090909;
+}
+
+#total-price {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+.thank-you {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #f4ff22;
+}

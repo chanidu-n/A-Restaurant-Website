@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #606060;
+    color: #333;
+    background-image: url(img/top.webp);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(103,71,54);
+    position: fixed;
+    right: 0;
+    left: 0;
+    
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(27, 27, 27, 0.5);
+    background-image: url(img/banner.jpg);
+}
+
+nav .logo img{
+    width: 120px;
+    margin: 20px 0;
+    position: relative;
+    left: -45%;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: rgb(243, 239, 239);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #090909;
+}
+
+nav ul li a.action{
+    color: #0c0c0c;
+    font-weight: bolder;
+}
+
+nav .login a {
+    font-weight: bolder;
+    color: #f7f1f1;
+    text-decoration: none;
+    border: 2px solid #fff8f8;
+    border-radius: 20px;
+    padding: 7px 20px;
+    transition: 0.3s;
+    background-color: #5c5c5c;
+}
+
+nav .login a:hover {
+    background: #090909;
+    color: #eceaea;
+}
+
+nav .login span {
+    color: #f7f1f1;
+    margin-left: 10px;
+}
+.parking-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #565555;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #f7f1f1;
+    
+}
+
+.parking-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.parking-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.parking-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.parking-info ul li {
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #222020;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #000000;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    color: #000;
+    font-style: italic;
+}
+
+footer .end span{
+    color: #e80a0a;
+    margin-left: 10px;
+    font-weight: bold;
+}

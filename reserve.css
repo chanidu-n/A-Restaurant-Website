@@ -1,0 +1,253 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(103,71,54);
+    position: fixed;
+    right: 0;
+    left: 0;
+    
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(27, 27, 27, 0.5);
+    background-image: url(img/banner.jpg);
+}
+
+nav .logo img{
+    width: 120px;
+    margin: 20px 0;
+    position: relative;
+    left: -45%;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: rgb(243, 239, 239);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #090909;
+}
+
+nav ul li a.action{
+    color: #0c0c0c;
+    font-weight: bolder;
+}
+
+nav .login a {
+    font-weight: bolder;
+    color: #f7f1f1;
+    text-decoration: none;
+    border: 2px solid #fff8f8;
+    border-radius: 20px;
+    padding: 7px 20px;
+    transition: 0.3s;
+    background-color: #5c5c5c;
+}
+
+nav .login a:hover {
+    background: #090909;
+    color: #eceaea;
+}
+
+nav .login span {
+    color: #f7f1f1;
+    margin-left: 10px;
+}
+/* reserve*/
+
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    
+    height: 40px;
+    color: #fff;
+    background-color: crimson;
+    padding: 5px 30px;
+    margin-top: 20px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    transition: .4s ease;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    
+    background: none;
+    color: black;
+    border: 2px solid crimson;
+  }
+  
+
+.oder{
+    
+    width: 100%;
+    height: 100vh;
+    padding: 5px 0;
+    background-color: #383030;
+}
+
+.oder h1{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.oder h1 span{
+    color: #ab1e1e;
+    margin-right: 10px;
+}
+
+.oder h2{
+  
+    color: white;
+}
+
+.oder .oder_main{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 15px;
+    background-color: #747272;
+}
+
+.oder .oder_main .oder_img img{
+    width: 650px;
+}
+
+.oder .oder_main .oder_form{
+    width: 50%;
+    height: 700px;
+    background: #42541a;
+    padding: 15px 20px 0 20px;
+    border-radius: 10px;
+}
+
+.oder .oder_main .oder_form h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.oder .oder_main .oder_form .oder_list{
+margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 20px;
+    margin-bottom: 30px;
+}
+
+.oder .oder_main .oder_form .oder_list p{
+    bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.oder .oder_main .oder_form .oder_list input{
+    width: 350px;
+    border: 2px solid #edecea;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    color: #fbfbfb;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+}
+
+.oder .oder_main .oder_form .oder_list textarea{
+
+    width: 350px;
+    height: 100px;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    color: #fbf7f7;
+    padding: 10px 5px;
+}
+
+footer{
+    width: 100%;
+    padding: 100px 0px;
+  
+    background: #eeeeee;
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #222020;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #000000;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    color: #000;
+    font-style: italic;
+}
+
+footer .end span{
+    color: #e80a0a;
+    margin-left: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a.action {
+    background-color: #ff6347;
+    border-radius: 4px;
+}
+
+nav .login a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ff6347;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav .login a:hover {
+    background-color: #ff4500;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    background-image: url('img/banner-3.png');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    animation: slideInFromRight 1.5s ease-in-out;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Blog Posts */
+.blog-posts {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.post {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.post h2 {
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+}
+
+.post p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.sidebar p, .sidebar ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: #ff6347;
+}
+
+footer {
+    width: 100%;
+    padding: 30px 20px;
+    background: #eeeeee;
+}
+
+footer .footer_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+footer .footer_tag {
+    text-align: center;
+}
+
+footer .footer_tag h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+footer .footer_tag p {
+    margin: 10px 0;
+}
+
+footer .footer_tag i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_tag i:hover {
+    color: #facc22;
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span {
+    color: #501504;
+    margin-left: 10px;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}

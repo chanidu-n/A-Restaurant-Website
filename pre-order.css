@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+nav .login a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .logout a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.banner_bg {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner_bg h1 {
+    font-size: 2.5em;
+}
+
+.banner_bg h1 span {
+    color: #ff9900;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+form button {
+    grid-column: 1 / -1;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+}
+
+footer .footer_main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer_tag {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+footer .footer_tag h2 {
+    margin-top: 0;
+}
+
+footer .footer_tag p, footer .footer_tag i {
+    margin: 5px 0;
+}
+
+footer .end {
+    margin-top: 20px;
+}
+
+footer .end span {
+    color: #ff9900;
+}
+
+.footer_tag i {
+    color: #ff9900;
+    margin-right: 10px;
+    cursor: pointer;
+}
